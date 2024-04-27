@@ -20,6 +20,7 @@
 		64379F642BDCE6D900A68E8D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F632BDCE6D900A68E8D /* ProductCell.swift */; };
 		64379F662BDCE6F300A68E8D /* ProductDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F652BDCE6F300A68E8D /* ProductDetailScreen.swift */; };
 		64379F692BDCEA5A00A68E8D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 64379F682BDCEA5A00A68E8D /* Kingfisher */; };
+		64379F6C2BDCF4AA00A68E8D /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F6B2BDCF4AA00A68E8D /* NetworkStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		64379F5F2BDCE6B000A68E8D /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		64379F632BDCE6D900A68E8D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		64379F652BDCE6F300A68E8D /* ProductDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailScreen.swift; sourceTree = "<group>"; };
+		64379F6B2BDCF4AA00A68E8D /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				64379F462BDCE2A300A68E8D /* ContentView.swift */,
 				64379F482BDCE2A500A68E8D /* Assets.xcassets */,
 				64379F4A2BDCE2A500A68E8D /* Preview Content */,
+				64379F6B2BDCF4AA00A68E8D /* NetworkStatus.swift */,
 			);
 			path = FakeStore;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				64379F602BDCE6B000A68E8D /* MainScreen.swift in Sources */,
 				64379F5E2BDCE64E00A68E8D /* ProductViewModel.swift in Sources */,
 				64379F472BDCE2A300A68E8D /* ContentView.swift in Sources */,
+				64379F6C2BDCF4AA00A68E8D /* NetworkStatus.swift in Sources */,
 				64379F5B2BDCE5D000A68E8D /* ProductManager.swift in Sources */,
 				64379F452BDCE2A300A68E8D /* FakeStoreApp.swift in Sources */,
 				64379F542BDCE4E000A68E8D /* Product.swift in Sources */,

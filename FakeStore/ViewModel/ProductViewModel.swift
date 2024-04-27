@@ -6,19 +6,23 @@
 //
 
 import SwiftUI
+import SwiftUI
 
 class ProductViewModel: ObservableObject {
     @Published var products: [Product] = []
     
-    func fetchProducts() {
-        ProductManager.fetchProducts { result in
+    func fetchProducts(completion: @escaping (Result<[Product], Error>) -> Void) {
+        APIClient.get(endpoint: Endpoints.products) { (result: Result<[Product], Error>) in
             switch result {
             case .success(let products):
                 DispatchQueue.main.async {
                     self.products = products
+                    completion(.success(products))
                 }
             case .failure(let error):
-                print("Error fetching products: \(error)")
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
         }
     }
