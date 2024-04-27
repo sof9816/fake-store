@@ -34,3 +34,10 @@ Packages used:
 - [Kingfisher](https://github.com/onevcat/Kingfisher)
 
 With these steps, you'll be able to run the Fake Store app on your iOS simulator or device, experiencing its robust features and user-friendly interface firsthand.
+
+## Demo
+
+https://github.com/sof9816/fake-store/assets/29151929/d708506d-4ddc-4b38-bc31-86bf983a9560
+
+
+
