@@ -22,8 +22,6 @@ struct ProductDetailScreen: View {
                 
                 // Product Details
                 VStack(alignment: .leading, spacing: 10) {
-                    Text(product.description)
-                        .lineLimit(nil) // Display title in full
                     Text("$\(String(format: "%.2f", product.price))")
                         .font(.headline)
                     HStack {
@@ -35,6 +33,8 @@ struct ProductDetailScreen: View {
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }
+                    Text(product.description)
+                        .lineLimit(nil) // Display title in full
                 }
             }.padding(20)
         }
@@ -48,8 +48,4 @@ struct ProductDetailScreen: View {
             .frame(maxWidth: .infinity)
             .clipped()
     }
-}
-
-#Preview {
-    ContentView()
 }

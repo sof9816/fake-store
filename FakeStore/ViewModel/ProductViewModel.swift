@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftUI
 
 class ProductViewModel: ObservableObject {
     @Published var products: [Product] = []
