@@ -11,6 +11,15 @@
 		64379F472BDCE2A300A68E8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F462BDCE2A300A68E8D /* ContentView.swift */; };
 		64379F492BDCE2A500A68E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64379F482BDCE2A500A68E8D /* Assets.xcassets */; };
 		64379F4C2BDCE2A500A68E8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64379F4B2BDCE2A500A68E8D /* Preview Assets.xcassets */; };
+		64379F542BDCE4E000A68E8D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F532BDCE4E000A68E8D /* Product.swift */; };
+		64379F572BDCE52C00A68E8D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F562BDCE52C00A68E8D /* ApiClient.swift */; };
+		64379F592BDCE5A400A68E8D /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F582BDCE5A400A68E8D /* Endpoints.swift */; };
+		64379F5B2BDCE5D000A68E8D /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F5A2BDCE5D000A68E8D /* ProductManager.swift */; };
+		64379F5E2BDCE64E00A68E8D /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F5D2BDCE64E00A68E8D /* ProductViewModel.swift */; };
+		64379F602BDCE6B000A68E8D /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F5F2BDCE6B000A68E8D /* MainScreen.swift */; };
+		64379F642BDCE6D900A68E8D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F632BDCE6D900A68E8D /* ProductCell.swift */; };
+		64379F662BDCE6F300A68E8D /* ProductDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64379F652BDCE6F300A68E8D /* ProductDetailScreen.swift */; };
+		64379F692BDCEA5A00A68E8D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 64379F682BDCEA5A00A68E8D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,14 @@
 		64379F462BDCE2A300A68E8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64379F482BDCE2A500A68E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64379F4B2BDCE2A500A68E8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64379F532BDCE4E000A68E8D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		64379F562BDCE52C00A68E8D /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		64379F582BDCE5A400A68E8D /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		64379F5A2BDCE5D000A68E8D /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		64379F5D2BDCE64E00A68E8D /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		64379F5F2BDCE6B000A68E8D /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		64379F632BDCE6D900A68E8D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		64379F652BDCE6F300A68E8D /* ProductDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64379F692BDCEA5A00A68E8D /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +69,10 @@
 		64379F432BDCE2A300A68E8D /* FakeStore */ = {
 			isa = PBXGroup;
 			children = (
+				64379F612BDCE6BC00A68E8D /* View */,
+				64379F5C2BDCE63C00A68E8D /* ViewModel */,
+				64379F552BDCE52000A68E8D /* ApiClient */,
+				64379F522BDCE4D300A68E8D /* Model */,
 				64379F442BDCE2A300A68E8D /* FakeStoreApp.swift */,
 				64379F462BDCE2A300A68E8D /* ContentView.swift */,
 				64379F482BDCE2A500A68E8D /* Assets.xcassets */,
@@ -65,6 +87,58 @@
 				64379F4B2BDCE2A500A68E8D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64379F522BDCE4D300A68E8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64379F532BDCE4E000A68E8D /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64379F552BDCE52000A68E8D /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				64379F6A2BDCEE4800A68E8D /* managers */,
+				64379F562BDCE52C00A68E8D /* ApiClient.swift */,
+				64379F582BDCE5A400A68E8D /* Endpoints.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		64379F5C2BDCE63C00A68E8D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64379F5D2BDCE64E00A68E8D /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64379F612BDCE6BC00A68E8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64379F622BDCE6CB00A68E8D /* Cell */,
+				64379F5F2BDCE6B000A68E8D /* MainScreen.swift */,
+				64379F652BDCE6F300A68E8D /* ProductDetailScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64379F622BDCE6CB00A68E8D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				64379F632BDCE6D900A68E8D /* ProductCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		64379F6A2BDCEE4800A68E8D /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				64379F5A2BDCE5D000A68E8D /* ProductManager.swift */,
+			);
+			path = managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +157,9 @@
 			dependencies = (
 			);
 			name = FakeStore;
+			packageProductDependencies = (
+				64379F682BDCEA5A00A68E8D /* Kingfisher */,
+			);
 			productName = FakeStore;
 			productReference = 64379F412BDCE2A300A68E8D /* FakeStore.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +188,9 @@
 				Base,
 			);
 			mainGroup = 64379F382BDCE2A300A68E8D;
+			packageReferences = (
+				64379F672BDCEA5A00A68E8D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 64379F422BDCE2A300A68E8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64379F662BDCE6F300A68E8D /* ProductDetailScreen.swift in Sources */,
+				64379F602BDCE6B000A68E8D /* MainScreen.swift in Sources */,
+				64379F5E2BDCE64E00A68E8D /* ProductViewModel.swift in Sources */,
 				64379F472BDCE2A300A68E8D /* ContentView.swift in Sources */,
+				64379F5B2BDCE5D000A68E8D /* ProductManager.swift in Sources */,
 				64379F452BDCE2A300A68E8D /* FakeStoreApp.swift in Sources */,
+				64379F542BDCE4E000A68E8D /* Product.swift in Sources */,
+				64379F642BDCE6D900A68E8D /* ProductCell.swift in Sources */,
+				64379F592BDCE5A400A68E8D /* Endpoints.swift in Sources */,
+				64379F572BDCE52C00A68E8D /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -280,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +398,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64379F672BDCEA5A00A68E8D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64379F682BDCEA5A00A68E8D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64379F672BDCEA5A00A68E8D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64379F392BDCE2A300A68E8D /* Project object */;
 }
